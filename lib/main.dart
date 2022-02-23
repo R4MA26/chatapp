@@ -1,3 +1,4 @@
+import 'package:chatapp/app/controllers/auth_controller.dart';
 import 'package:chatapp/app/utils/error_screen.dart';
 import 'package:chatapp/app/utils/loading_screen.dart';
 import 'package:chatapp/app/utils/splash_screen.dart';
@@ -30,6 +31,8 @@ class MyApp extends StatelessWidget {
 
   final Future<FirebaseApp> _initialization = Firebase.initializeApp();
 
+  final authC = Get.put(AuthController(), permanent: true);
+
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
@@ -46,10 +49,16 @@ class MyApp extends StatelessWidget {
             ),
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.done) {
-                return GetMaterialApp(
-                  title: "ChatApp",
-                  initialRoute: AppPages.INITIAL,
-                  getPages: AppPages.routes,
+                return Obx(
+                  () => GetMaterialApp(
+                    title: "ChatApp",
+                    initialRoute: authC.isSkipIntro.isTrue
+                        ? authC.isAuth.isTrue
+                            ? Routes.HOME
+                            : Routes.LOGIN
+                        : Routes.INTRODUCTION,
+                    getPages: AppPages.routes,
+                  ),
                 );
               }
               return const SplashScreen();
