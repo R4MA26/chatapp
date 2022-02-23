@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "118720572883",
+    "project_id": "chatapp-rama",
+    "storage_bucket": "chatapp-rama.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118720572883:android:e51db09532b2fbd864d326",
+        "android_client_info": {
+          "package_name": "com.ramaproject.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118720572883-thumkp4lujdgr5vf3ujicq1ksi0at5vj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ramaproject.chatapp",
+            "certificate_hash": "c40cc459e065b736ba4163b66199954f9445552c"
+          }
+        },
+        {
+          "client_id": "118720572883-jhm1j47b7f14fh57bh5p55g2kgvcbbff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBejhLSFjnH94INBlv4po2Uw1wJ_nt6WjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118720572883-jhm1j47b7f14fh57bh5p55g2kgvcbbff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
