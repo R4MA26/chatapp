@@ -27,7 +27,7 @@ class IntroductionView extends GetView<IntroductionController> {
           PageViewModel(
             title: "Temukan sahabat baru",
             body:
-                "Jika kamu memnag jodoh dengan aplikasi ini kami sangat bahagia.",
+                "Jika kamu memang jodoh dengan aplikasi ini kami sangat bahagia.",
             image: Container(
               width: Get.width * 0.6,
               height: Get.width * 0.6,
