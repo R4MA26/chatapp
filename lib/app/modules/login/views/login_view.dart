@@ -1,3 +1,4 @@
+import 'package:chatapp/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -31,7 +32,7 @@ class LoginView extends GetView<LoginController> {
                     horizontal: 10,
                   ),
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () => Get.toNamed(Routes.HOME),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
