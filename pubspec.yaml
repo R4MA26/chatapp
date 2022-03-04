@@ -12,6 +12,7 @@ dependencies:
   firebase_auth: 3.3.7
   lottie: 1.2.2
   introduction_screen: 3.0.0
+  avatar_glow: 2.0.2
   flutter: 
     sdk: flutter
 
