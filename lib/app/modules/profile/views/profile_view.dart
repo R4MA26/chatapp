@@ -14,7 +14,7 @@ class ProfileView extends GetView<ProfileController> {
         elevation: 0,
         backgroundColor: Colors.white,
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () => Get.back(),
           icon: const Icon(
             Icons.arrow_back,
             color: Colors.black,
