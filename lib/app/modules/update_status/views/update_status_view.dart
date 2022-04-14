@@ -5,16 +5,18 @@ import 'package:get/get.dart';
 import '../controllers/update_status_controller.dart';
 
 class UpdateStatusView extends GetView<UpdateStatusController> {
+  const UpdateStatusView({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
         ),
         backgroundColor: Colors.red[900],
-        title: Text('Update Status'),
+        title: const Text('Update Status'),
         centerTitle: true,
       ),
       body: Padding(
@@ -25,7 +27,7 @@ class UpdateStatusView extends GetView<UpdateStatusController> {
               cursorColor: Colors.black,
               decoration: InputDecoration(
                 labelText: "Status",
-                labelStyle: TextStyle(
+                labelStyle: const TextStyle(
                   color: Colors.black,
                 ),
                 border: OutlineInputBorder(
@@ -33,22 +35,22 @@ class UpdateStatusView extends GetView<UpdateStatusController> {
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(100),
-                  borderSide: BorderSide(color: Colors.black),
+                  borderSide: const BorderSide(color: Colors.black),
                 ),
-                contentPadding: EdgeInsets.symmetric(
+                contentPadding: const EdgeInsets.symmetric(
                   horizontal: 30,
                   vertical: 20,
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            Container(
+            SizedBox(
               width: Get.width,
               child: ElevatedButton(
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   "UPDATE",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -59,7 +61,7 @@ class UpdateStatusView extends GetView<UpdateStatusController> {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(100),
                   ),
-                  padding: EdgeInsets.symmetric(
+                  padding: const EdgeInsets.symmetric(
                     horizontal: 30,
                     vertical: 20,
                   ),
